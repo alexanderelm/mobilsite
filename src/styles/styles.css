@@ -1,0 +1,115 @@
+@import url("./fonts.css");
+
+/*** Colors ***/
+:root {
+  --off-white: #fafbf6;
+  --beige: #f0f1e8;
+  --dark-green: #263918;
+  --light-green: #e0e9c2;
+}
+
+/*** UI ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--off-white);
+}
+
+header {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+footer {
+  padding: 1rem;
+  background-color: var(--beige);
+  margin-top: 2rem;
+}
+
+/*** Components ***/
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.image-container {
+  background-color: var(--dark-green);
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+
+  img {
+    border-radius: calc(0.5rem - 0.2rem);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.nav-links {
+  overflow-x: auto;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background-color: var(--beige);
+  border-radius: 0.5rem;
+  margin: 1rem 0 1rem 0;
+  padding: 1rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  a {
+    font-weight: 500;
+    font-size: 1rem;
+    text-wrap: nowrap;
+  }
+}
+
+.link-button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: var(--light-green);
+  border-radius: 0.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #1f0812;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
